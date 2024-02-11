@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import HomePage from "./components/HomePage";
 import Trasnsaction from "./components/Transaction";
+import TransactionData from "./components/TransactionData";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: "/transaction",
     element: <Trasnsaction></Trasnsaction>,
+  },
+  {
+    path: "/data",
+    element: <TransactionData></TransactionData>,
   },
 ]);
 
