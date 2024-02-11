@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# React.js Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This project is a React.js web application developed to demonstrate proficiency in various frontend technologies and practices. The goal was to create a seamless web application with three main pages - Home, Transaction, and Data - showcasing capabilities in React Router, form input validation, error handling, and clean, readable code.
 
-In the project directory, you can run:
+## Technologies Used
 
-### `npm start`
+- **React.js:** Used as the primary frontend library for building the application.
+- **React Router:** Implemented React Router for seamless navigation between different pages.
+- **Tailwind CSS:** Utilized Tailwind for styling and UI components, incorporating components from Tailwind UI and Tailwind Components.
+- **Firebase Firestore:** Employed Google Firestore for data storage and retrieval.
+- **React Hook Form:** Integrated the React Hook Form library for efficient and effective form validation.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Template Libraries
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Tailwind CSS was chosen as the primary template library for designing the pages. The project leverages the rich set of components and utilities offered by Tailwind CSS, avoiding the need to create the screen design from scratch.
 
-### `npm test`
+## Assignment Details
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1. React Router Navigation
 
-### `npm run build`
+- Designed a web application with three pages - Home, Transaction, and Data.
+- Implemented seamless navigation between pages using React Router.
+- Created a visually appealing navbar to enhance user navigation.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2. Transaction Page (Form Input Validation)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Developed a Transaction page with a form requesting the user's wallet address and amount.
+- Implemented validation checks:
+  - Wallet Address: Ensured it is not empty and follows the standard Ethereum address format.
+  - Amount: Validated that the entered value is a number and within the specified range (0 - 10,000).
+- Submitted data is stored in Google Firestore database.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 3. Data Page
 
-### `npm run eject`
+- Implemented a Data page to fetch and display data from the Google Firestore database stored during the Transaction page.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 4. Error Handling
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Provided clear and user-friendly error messages for form validations.
+- Examples include messages for empty wallet address fields and incorrect values entered.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 5. Code Proficiency and Readability
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Ensured clean, concise, and easily readable code.
+- Avoided corner cases that could break the application.
 
-## Learn More
+## Submission
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The code is available in the [GitHub repository] https://github.com/26abhaykumarsingh/sharpeAI_assignment and deployed on [Vercel](deployment-link).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Instructions for Installation and Running
 
-### Code Splitting
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. Run `npm install` to install the required dependencies.
+4. Execute `npm start` to start the development server.
+5. Open your browser and go to `http://localhost:3000` to view the application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Unique and Creative Approaches
 
-### Analyzing the Bundle Size
+1. Tailwind UI Component Integration:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   - Leveraged Tailwind UI components to enhance the visual aesthetics and functionality of the application.
+   - Demonstrated creativity by carefully selecting and customizing Tailwind UI components to create a cohesive and visually appealing user interface.
 
-### Making a Progressive Web App
+2. Seamless Form Validation with React Hook Form:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   - Utilized React Hook Form for efficient and effective form validation.
+   - Created a streamlined and user-friendly form submission process by implementing real-time validation checks for the wallet address and amount fields.
 
-### Advanced Configuration
+3. Dynamic Error Handling:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   - Innovatively handled form validation errors by providing clear and dynamic error messages for users.
+   - Ensured a user-friendly experience by guiding users with specific error messages based on the validation criteria, enhancing overall usability.

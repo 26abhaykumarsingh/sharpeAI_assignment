@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { collection, getDocs } from "firebase/firestore";
+
 import Navbar from "./Navbar";
 import db from "../Firebase";
-
-import { collection, getDocs } from "firebase/firestore";
 
 function TransactionData() {
   const [data, setData] = useState([]);
@@ -44,8 +44,8 @@ function TransactionData() {
                 </thead>
                 <tbody>
                   {data &&
-                    data.map((item) => (
-                      <tr>
+                    data.map((item, index) => (
+                      <tr key={index}>
                         <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                           <div className="flex items-center">
                             <div className="flex-shrink-0 w-10 h-10">
