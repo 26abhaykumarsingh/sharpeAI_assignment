@@ -1,6 +1,8 @@
 import { useForm } from "react-hook-form";
+import { collection, addDoc } from "firebase/firestore";
 
 import Navbar from "./Navbar";
+import db from "../Firebase";
 
 export default function Trasnsaction() {
   const {
@@ -8,6 +10,19 @@ export default function Trasnsaction() {
     handleSubmit,
     formState: { errors },
   } = useForm();
+
+  const sendData = async (data) => {
+    console.log(data);
+    try {
+      const docRef = await addDoc(collection(db, "transactions"), {
+        address: data.address,
+        amount: data.amount,
+      });
+      console.log("Document written with ID: ", docRef.id);
+    } catch (e) {
+      console.error("Error adding document: ", e);
+    }
+  };
   return (
     <>
       <Navbar></Navbar>
@@ -24,7 +39,10 @@ export default function Trasnsaction() {
         </div>
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-          <form className="space-y-6" onSubmit={handleSubmit((data) => {})}>
+          <form
+            className="space-y-6"
+            onSubmit={handleSubmit((data) => sendData(data))}
+          >
             <div>
               <label
                 htmlFor="address"
