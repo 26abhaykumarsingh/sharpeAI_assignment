@@ -48,7 +48,7 @@ Tailwind CSS was chosen as the primary template library for designing the pages.
 
 ## Submission
 
-The code is available in the [GitHub repository] https://github.com/26abhaykumarsingh/sharpeAI_assignment and deployed on [Vercel](deployment-link).
+The code is available in the [GitHub repository] https://github.com/26abhaykumarsingh/sharpeAI_assignment and deployed on [Vercel]https://sharpe-ai-assignment-pink.vercel.app/.
 
 ## Instructions for Installation and Running
 
