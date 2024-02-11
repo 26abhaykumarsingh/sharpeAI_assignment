@@ -8,6 +8,7 @@ export default function Trasnsaction() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
 
@@ -41,7 +42,10 @@ export default function Trasnsaction() {
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
           <form
             className="space-y-6"
-            onSubmit={handleSubmit((data) => sendData(data))}
+            onSubmit={handleSubmit((data) => {
+              sendData(data);
+              reset();
+            })}
           >
             <div>
               <label
